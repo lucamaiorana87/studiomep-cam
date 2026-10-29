@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1117">
+  <meta name="description" content="CAM_CT_01 — STUDIO MEP. Dimostrazione CCTV con panoramica simulata su fotografie reali della centrale.">
+  <title>CAM_CT_01 · STUDIO MEP</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./index.html" aria-label="STUDIO MEP, pagina iniziale"><span class="brand-mark">M<span>+</span></span><span>STUDIO MEP<small>ENGINEERING · DIGITAL TWIN</small></span></a><div class="environment"><span class="dot"></span> AMBIENTE DIMOSTRATIVO</div></header>
+  <main>
+    <div class="heading"><div><p class="eyebrow">VISUALIZZAZIONE IMPIANTI / CAMERA 01</p><h1>Centrale termofrigorifera<span>.</span></h1><p class="subtitle">Un punto di vista sulla centrale reale.</p></div><span class="camera-tag">CAM_CT_01 <span>↗</span></span></div>
+    <section class="console" aria-label="Telecamera virtuale CAM_CT_01">
+      <div class="console-bar"><span><i class="dot"></i> CAM_CT_01 <span class="bar-detail">/ ESTERNO CENTRALE</span></span><span class="mode">PTZ SIMULATA</span></div>
+      <div id="viewer" class="viewer">
+        <div id="photos" class="photos" aria-label="Sequenza di fotografie reali della centrale"></div>
+        <div class="shade"></div><div class="scanlines"></div>
+        <div class="overlay-top"><div><span class="simulation"><i></i> SIMULAZIONE LIVE</span><span class="overlay-caption">FOTOGRAFIE REALI · MOVIMENTO SIMULATO</span></div><div class="clock"><time id="datetime">--/--/---- --:--:--</time><span id="timezone">ORA LOCALE DEL DISPOSITIVO</span></div></div>
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <div class="crosshair" aria-hidden="true"></div>
+        <div class="overlay-bottom"><div><span class="view-label">INQUADRATURA <span id="shot-number">01 / 09</span></span><h2 id="shot-title">Coibentazione dei circuiti</h2><span class="location">STUDIO MEP / CAM_CT_01</span></div><div class="ptz-info"><span id="motion-status">AUTO PAN</span><span>TOUR <b id="elapsed">00</b> / 36 s</span><span>AUDIO ASSENTE</span></div></div>
+        <div id="asset-error" class="asset-error" role="alert" hidden>Fotografie non disponibili. Estrai l’intero ZIP e mantieni la cartella assets accanto a index.html.</div>
+        <noscript><div class="asset-error">Attiva JavaScript per visualizzare la simulazione e l’orologio.</div></noscript>
+      </div>
+      <div class="playback"><div class="playback-controls"><button id="pause" type="button" aria-pressed="false">Ⅱ <span>Pausa</span></button><span class="divider"></span><span id="play-state">Tour automatico</span></div><div class="duration"><span class="dot"></span> CICLO 36 s</div><button id="fullscreen" type="button">⛶ <span>Schermo intero</span></button></div>
+      <div class="timeline" role="progressbar" aria-label="Avanzamento tour" aria-valuemin="0" aria-valuemax="36" aria-valuenow="0"><div id="progress"></div></div>
+    </section>
+      <div class="below"><section class="presets" aria-label="Seleziona inquadratura"><div class="section-label">IL PERCORSO <span>09 INQUADRATURE</span></div><div id="presets" class="preset-grid"></div></section><aside class="notice"><span class="notice-icon">i</span><div><strong>Una simulazione, dichiarata.</strong><p>Panoramica animata su fotografie della centrale. Non è una ripresa in diretta e non indica lo stato attuale degli impianti.</p></div></aside></div>
+    <footer><span>STUDIO MEP <span class="footer-slash">/</span> DIGITAL TWIN DEMO</span><span>CAM_CT_01 · RIPRODUZIONE LOCALE</span></footer>
+  </main>
+</body>
+</html>
